@@ -1,7 +1,13 @@
 #!/bin/bash
 
-# ınstall rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+# Check if Rust is installed
+if command -v rustc &>/dev/null; then
+    echo "Rust is already installed."
+else
+    echo "Installing Rust..."
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    echo "Rust installation complete."
+fi
 
 set -e  # Exit immediately if a command exits with a non-zero status
 
