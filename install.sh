@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# ınstall rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 set -e  # Exit immediately if a command exits with a non-zero status
 
 # Define the installation path for uv
