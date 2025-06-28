@@ -29,3 +29,6 @@ elif [ -f "$UV_BIN" ]; then
 else
     install_uv
 fi
+
+# ınstall important cli tools
+cargo install macchina --version 6.4.0
